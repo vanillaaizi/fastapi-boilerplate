@@ -22,7 +22,7 @@ env = Config()
 
 # FastAPI configurations
 fastapi_config: dict[str, Any] = {
-    "title": "API nfactorial",
+    "title": "API aizi nfactorial",
 }
 
 mongo_url = (
@@ -33,6 +33,5 @@ if env.MONGO_URL:
 
 # MongoDB connection
 client = MongoClient(mongo_url)
-
 # MongoDB database
 database = client[env.MONGODATABASE]
